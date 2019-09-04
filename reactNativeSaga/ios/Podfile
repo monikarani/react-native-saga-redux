@@ -27,6 +27,11 @@ target 'reactNativeSaga' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+   
+ # CodePush plugin dependency
+ pod 'CodePush', :path => '../node_modules/react-native-code-push'
+ pod 'Fabric', '~> 1.10.2'
+ pod 'Crashlytics', '~> 3.13.4' 
   target 'reactNativeSagaTests' do
     inherit! :search_paths
     # Pods for testing
